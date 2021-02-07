@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+    name: pod-simplewriter
+    labels:
+      type: simplewriter
+spec:
+    containers:
+        - name: simplewriterimage
+          image: my-java-app:latest      
+          imagePullPolicy: IfNotPresent
